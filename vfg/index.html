@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список хобби</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Список хобби</h1>
+    <div class="input-group">
+      <input type="text" id="hobby-name" placeholder="Название хобби">
+      <textarea id="hobby-description" placeholder="Краткое описание хобби"></textarea>
+      <button id="add-hobby">Добавить хобби</button>
+    </div>
+    <div id="hobbies-container"></div>
+    <template id="hobby-template">
+      <div class="card">
+        <h2 class="card-title"></h2>
+        <p class="card-description"></p>
+        <div class="card-buttons">
+          <button class="button-like">Лайк</button>
+          <button class="button-delete">Удалить</button>
+        </div>
+      </div>
+    </template>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
